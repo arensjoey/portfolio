@@ -1,0 +1,292 @@
+/* CSS Document */
+
+
+	body {
+		
+		margin: 0;
+		scroll-behavior: smooth;
+
+	
+		background-image: url('background.png');
+	
+	}
+	
+
+	
+	
+	
+	@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+	
+	
+	.header {
+		font-family: 'Concert One', cursive;
+		margin-top: 0em;
+		padding-top: 2em;
+		padding-bottom: 2.7em;
+		te/xt-align: center;
+		border-bottom: 2px black solid;
+		margin-bottom: 1em;
+		background: rgba(255, 255, 255, 0.7);
+	}
+
+.header p {
+	text-align: center;
+}
+	
+	.content {
+		
+		margin: 0 auto;
+		text-align: center;
+		overflow: hidden;
+	}
+	
+	.featured {
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		overflow: hidden;
+		
+	}
+
+	.description p, .description h1 {
+		position: relative;
+		margin: 0 auto;
+		text-align: left;
+		overflow: hidden;
+		
+	}
+
+	#logo {
+		transition: transform 0.2s, box-shadow 1s;
+	}
+	
+	#logo:hover {
+		transform: scale(1.1);
+		box-shadow: 0px 0px 5px 5px black;
+	}
+	
+	#logo:active {
+		transition: transform 0.2s;
+		transform: scale(1.05);
+	}
+	
+	.images, .featuredimage {
+		outline: 10px solid transparent;
+		outline-offset: -10px;
+		transition: outline 0.2s, outline-offset 0.2s, transform 0.2s;
+	}
+	
+	.images:hover, .featuredimage:hover {
+		transform: scale(1);
+		outline: 10px solid black;
+		outline-offset: -20px;
+
+	}
+	
+	.images:active {
+		transform: scale(0.95);
+		outline: 10px solid white;
+		outline-offset: -20px;
+	}
+	
+	.featuredimage:active {
+		transform: scale(0.98);
+		outline: 10px solid white;
+		outline-offset: -20px;
+	}
+
+	
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+	transition: font-size 0.1s, color 0.1s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	font-size: 27px;
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+	
+	
+	
+	
+@media (max-width: 9999px){
+	
+	#logo {
+		margin-left: 45%;
+		max-width: 15%;
+		min-width: 15%;
+	}
+	
+	.header p {
+		margin-left: 5%;
+	}
+	
+	.content, .featured {
+		width: 90%;
+
+	}
+	
+	.featured p, .featured h1 {
+		width: 80%;
+		margin-left: 10%;
+	}
+	
+	.images {
+		max-width: 17%;
+		min-width: 17%;
+	}
+	
+	.featuredimage {
+		max-width: 86%;
+		min-width: 86%;
+	}
+}
+	
+@media (max-width: 1587px){
+	
+	#logo {
+		margin-left: 45%;
+		max-width: 20%;
+		min-width: 20%;
+	}
+	
+	.header p {
+		margin-left: 10%;
+	}
+	
+	.content, .featured {
+		width: 100%;
+
+	}
+	
+	
+	.featured p, .featured h1 {
+		width: 80%;
+		margin-left: 10%;
+	}
+	.images {
+		max-width: 20%;
+		min-width: 20%;
+	}
+	
+	.featuredimage {
+		max-width: 80.8%;
+		min-width: 80.8%;
+	}
+}
+
+@media (max-width: 1126px){
+	
+	#logo {
+		margin-left: 45%;
+		max-width: 25%;
+		min-width: 25%;
+	}
+	
+	.content, .featured {
+		width: 90%;
+
+	}
+	
+	.featured p, .featured h1 {
+		width: 80%;
+		margin-left: 13%;
+	}
+	
+	.images {
+		max-width: 30%;
+		min-width: 30%;
+	}
+	
+	.featuredimage {
+		max-width: 90.9%;
+		min-width: 90.9%;
+	}
+}
+
+@media (max-width: 729px){
+	
+	#logo {
+		max-width: 45%;
+		min-width: 45%;
+	}
+	.content, .featured {
+		width: 90%;
+
+	}
+	
+	.header p {
+		margin-left: 5%;
+	}
+	
+	.featured p, .featured h1 {
+		width: 80%;
+		margin-left: 17%;
+	}
+	
+	.images {
+		max-width: 49%;
+		min-width: 49%;
+	}
+	.featuredimage {
+		max-width: 98.8%;
+		min-width: 98.8%;
+	}
+}
+	
+@media (max-width: 392px ){
+	.content, .featured {
+		width: 90%;
+
+	}
+	
+	.featured p, .featured h1 {
+		width: 80%;
+		margin-left: 20%;
+	}
+	
+	.images {
+		max-width: 100%;
+		min-width: 100%;
+	}
+	.featuredimage {
+		max-width: 100%;
+		min-width: 100%;
+	}
+				
+		
+}
+	
